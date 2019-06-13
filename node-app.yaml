@@ -14,7 +14,7 @@ spec:
 apiVersion: apps/v1
 kind: Deployment
 metadata:
-  name: nodejs
+  name: nodejs-v1
   labels:
     version: v1
 spec:
@@ -30,6 +30,29 @@ spec:
     spec:
       containers:
       - name: nodejs
-        image: katjuell/node-demo
+        image: katjuell/node-demo-v1
+        ports:
+        - containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: nodejs-v2
+  labels:
+    version: v2
+spec:
+  replicas: 1
+  selector:
+    matchLabels:
+      app: nodejs
+  template:
+    metadata:
+      labels:
+        app: nodejs
+        version: v2
+    spec:
+      containers:
+      - name: nodejs
+        image: katjuell/node-demo-v2
         ports:
         - containerPort: 8080
