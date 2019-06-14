@@ -1,1 +1,1 @@
-Istio installation plus Gateways/Virtual Services to run minimal Node.js app
+Istio installation plus Gateways/Virtual Services to run minimal Node.js app as describe in [How To Install and Use Istio](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-istio). 
