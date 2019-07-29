@@ -1,1 +1,1 @@
-Istio installation plus Gateways/Virtual Services to run minimal Node.js app as describe in [How To Install and Use Istio](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-istio). 
+Istio canary deployment of Node.js app, as described in [How To Do Canary Deployments With Istio and Kubernetes](https://www.digitalocean.com/community/tutorials/how-to-do-canary-deployments-with-istio-and-kubernetes). 
